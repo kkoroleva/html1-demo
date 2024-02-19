@@ -1,0 +1,91 @@
+body {
+    padding: 100px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    content: '';
+}
+
+.heart {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.heart-1 {
+    content: '';
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-top, .right-top {
+    width: 60px;
+    height: 60px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+}
+.left-bottom {
+    width: 30px;
+    height: 30px;
+    border: 30px solid red;
+    border-bottom: 30px solid white;
+    border-right: 30px solid white;
+}
+.right-bottom {
+    width: 30px;
+    height: 30px;
+    border: 30px solid red;
+    border-bottom: 30px solid white;
+    border-left: 30px solid white;
+}
+
+.heart-2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.heart-2::before,
+.heart-2::after {
+    content : '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart-2::before {
+    top: -50px;
+    left: 0;
+}
+.heart-2::after {
+    top: 0;
+    left: -50px;
+}
+
+.heart-svg {
+    fill: red;
+    width: 100px;
+    height: 100px;
+}
